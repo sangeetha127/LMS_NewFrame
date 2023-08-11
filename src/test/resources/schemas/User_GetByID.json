@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "userRoleId": {
+          "type": "integer"
+        },
+        "user": {
+          "type": "object",
+          "properties": {
+            "userId": {
+              "type": "string"
+            },
+            "userFirstName": {
+              "type": "string"
+            },
+            "userLastName": {
+              "type": "string"
+            },
+            "userMiddleName": {
+              "type": "string"
+            },
+            "userPhoneNumber": {
+              "type": "integer"
+            },
+            "userLocation": {
+              "type": "string"
+            },
+            "userTimeZone": {
+              "type": "string"
+            },
+            "userLinkedinUrl": {
+              "type": "string"
+            },
+            "userEduUg": {
+              "type": "string"
+            },
+            "userEduPg": {
+              "type": "string"
+            },
+            "userComments": {
+              "type": "string"
+            },
+            "userVisaStatus": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "userId",
+            "userFirstName",
+            "userLastName",
+            "userMiddleName",
+            "userPhoneNumber",
+            "userLocation",
+            "userTimeZone",
+            "userLinkedinUrl",
+            "userEduUg",
+            "userEduPg",
+            "userComments",
+            "userVisaStatus"
+          ]
+        },
+        "role": {
+          "type": "object",
+          "properties": {
+            "roleId": {
+              "type": "string"
+            },
+            "roleName": {
+              "type": "string"
+            },
+            "roleDesc": {
+              "type": "string"
+            },
+            "creationTime": {
+              "type": "null"
+            },
+            "lastModTime": {
+              "type": "null"
+            },
+            "hibernateLazyInitializer": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "roleId",
+            "roleName",
+            "roleDesc",
+            "creationTime",
+            "lastModTime",
+            "hibernateLazyInitializer"
+          ]
+        },
+        "batches": {
+          "type": "array",
+          "items": {}
+        },
+        "userRoleStatus": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userRoleId",
+        "user",
+        "role",
+        "batches",
+        "userRoleStatus"
+      ]
+    }
+  ]
+}
