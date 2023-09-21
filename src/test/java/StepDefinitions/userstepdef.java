@@ -29,7 +29,7 @@ package StepDefinitions;
 
 public class userstepdef {
 	
-		ConfigReader config = new ConfigReader();		
+		//ConfigReader config = new ConfigReader();		
 		String baseURL=config.getBaseUrl();
 		String userpostendpoint=config.getUser_post_Url();
 		String excelpath =".\\src/test/resources/data/UserData.xlsx";
